@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+      <!-- tailwind css CDN -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <!-- icons CDN -->
+         <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- import font -->
+     <link rel="stylesheet" href="../Fonts/WEB/css/satoshi.css">
+     <link rel="stylesheet" href="des.css">
+</head>
+<body>
+    <div class="2xl:container mx-auto bg-white space-y-5 ">
+        <!-- heading -->
+         <div class="w-[90%] md:w-[70%] mx-auto grid grid-cols-1 py-4 ">
+       <!-- grouping -->
+          <div class="flex flex-row justify-between items-center">
+      <div>
+        <h1 class="font-[Satoshi-Regular] text-[30px] font-[400] leading-[36px]">My Portfolio</h1>
+        <p class=" font-[Satoshi-Regular] text-[18px] font-[400] leading-[28px]">Naveen M </p>
+       </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+      </div>
+    </div>
+         </div>
+         
+  <!-- top nav bar -->
+  <div class="hidden md:block">
+    <div class="w-[90%] md:w-[70%] mx-auto grid grid-cols-1 ">
+        <div class="flex flex-row justify-around items-center my-7 px-4 py-5  rounded-2xl shadow-2xl">
+          <a href="../portfolio.html" class="hover:text-[orange]">Home</a>
+          <a href="About.html" class="hover:text-[orange]">About</a>
+          <a href="Projects.html" class="hover:text-[orange]">Projects</a>
+          <a href="Resume.html" class="hover:text-[orange]">Resume</a>
+          <a href="Tools.html" class="hover:text-[orange]">Tools</a>
+          <a href="ask me.html" class="hover:text-[orange]">Ask me anything</a>
+        </div>
+    </div>
+</div>
+<!-- bottom nav bar -->
+     <div class="fixed bottom-0 w-[100%] md:hidden">
+    <div class="w-[90%] md:w-[70%] mx-auto grid grid-cols-1 ">
+        <div class="flex flex-row justify-around items-center my-7 px-4 py-5  rounded-2xl shadow-2xl">
+          <a href="../portfolio.html" class="hover:text-[orange]">Home</a>
+          <a href="About.html" class="hover:text-[orange]">About</a>
+          <a href="Projects.html" class="hover:text-[orange]">Projects</a>
+          <a href="Resume.html" class="hover:text-[orange]">Resume</a>
+          <a href="Tools.html" class="hover:text-[orange]">Tools</a>
+          <a href="ask me.html" class="hover:text-[orange]">Ask me anything</a>
+        </div>
+    </div>
+</div>
+ <!-- main section -->
+      <div class="w-[90%] md:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4 gap-5">
+      
+     
+        <!-- card 1 -->
+    <div class=" space-y-2 w-[90] ">
+        <img src="data:image/jpeg;base64,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 ">
+       <p class="text-[16px] leading-[24px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+         <!-- button -->
+      <div class="flex items-center gap-7">
+       <button class="bg-[#49de80]  text-white  px-4 py-1 rounded-lg flex gap-2 text-[16px] leading-[24px]" >
+       
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-right"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
+        Live Link
+       </button>
+
+       <button class="bg-black flex flex-row text-white px-4 py-1 rounded-lg gap-2 text-[16px] leading-[24px]">
+       
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+       Github link
+       </button>
+    </div>
+    </div>
+     <!-- card 2 -->
+     <div class="  space-y-2 w-[90] ">
+        <img src="data:image/jpeg;base64,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 ">
+       <p class="text-[16px] leading-[24px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+         <!-- button -->
+      <div class="flex items-center gap-7">
+       <button class="bg-[#49de80]  text-white  px-4 py-1 rounded-lg flex gap-2 text-[16px] leading-[24px]" >
+       
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-right"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
+        Live Link
+       </button>
+
+       <button class="bg-black flex flex-row text-white px-4 py-1 rounded-lg gap-2 text-[16px] leading-[24px]">
+       
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+       Github link
+       </button>
+    </div>
+    </div>
+     <!-- card 3 -->
+     <div class="  space-y-2 w-[90] ">
+        <img src="data:image/jpeg;base64,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 ">
+       <p class="text-[16px] leading-[24px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+         <!-- button -->
+      <div class="flex items-center gap-7">
+       <button class="bg-[#49de80]  text-white  px-4 py-1 rounded-lg flex gap-2 text-[16px] leading-[24px]" >
+       
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-right"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
+        Live Link
+       </button>
+
+       <button class="bg-black flex flex-row text-white px-4 py-1 rounded-lg gap-2 text-[16px] leading-[24px]">
+       
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+       Github link
+       </button>
+    </div>
+    </div>
+        <!-- card 4 -->
+        <div class=" space-y-2 w-[90] ">
+            <img src="data:image/jpeg;base64,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 ">
+           <p class="text-[16px] leading-[24px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+             <!-- button -->
+          <div class="flex items-center gap-7">
+           <button class="bg-[#49de80]  text-white  px-4 py-1 rounded-lg flex gap-2 text-[16px] leading-[24px]" >
+           
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-right"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
+            Live Link
+           </button>
+    
+           <button class="bg-black flex flex-row text-white px-4 py-1 rounded-lg gap-2 text-[16px] leading-[24px]">
+           
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+           Github link
+           </button>
+        </div>
+        </div>
+         <!-- card 5 -->
+         <div class="  space-y-2 w-[90] ">
+            <img src="data:image/jpeg;base64,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 ">
+           <p class="text-[16px] leading-[24px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+             <!-- button -->
+          <div class="flex items-center gap-7">
+           <button class="bg-[#49de80]  text-white  px-4 py-1 rounded-lg flex gap-2 text-[16px] leading-[24px]" >
+           
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-right"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
+            Live Link
+           </button>
+    
+           <button class="bg-black flex flex-row text-white px-4 py-1 rounded-lg gap-2 text-[16px] leading-[24px]">
+           
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+           Github link
+           </button>
+        </div>
+        </div>
+         <!-- card 6 -->
+         <div class="  space-y-2 w-[90] ">
+            <img src="data:image/jpeg;base64,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 ">
+           <p class="text-[16px] leading-[24px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+             <!-- button -->
+          <div class="flex items-center gap-7">
+           <button class="bg-[#49de80]  text-white  px-4 py-1 rounded-lg flex gap-2 text-[16px] leading-[24px]" >
+           
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-right"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
+            Live Link
+           </button>
+    
+           <button class="bg-black flex flex-row text-white px-4 py-1 rounded-lg gap-2 text-[16px] leading-[24px]">
+           
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+           Github link
+           </button>
+        </div>
+        </div>
+    </div>
+  
+
+  
+    </div>
+      
+    
+           <!-- footer -->
+      <div class="w-[90%] md:w-[70%] mx-auto font-[Satoshi-Regular] grid grid-cols-1 py-4  ">
+        <div class="flex flex-row justify-between ">
+    
+          <div>
+            <p>@2024. All rights removed</p>
+          </div>
+            <!-- svg div -->
+            <div class="flex gap-4">
+            <!-- github -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            <!-- linkedin svg -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+         <!-- twitteer svg  -->
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          </div>
+        </div>
+      </div>
+    
+      </div>
+    
+</body>
+</html>
